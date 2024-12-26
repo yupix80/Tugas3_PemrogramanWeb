@@ -6,6 +6,7 @@ if (!isset($_SESSION['id_user'])) {
 // tambah koneksi disini
 include "template/koneksi.php";
 
+// tambah notif jika hapus berhasil
 $notif_hapuscart = false;
 if (isset($_GET['remove_cart'])) {
     if($_GET['remove_cart'] == '1'){
